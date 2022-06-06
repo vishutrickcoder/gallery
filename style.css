@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+/* ---------------- Using Flex Box Start ------------------------ */
+
+/* .container {
+display: flex;
+flex-wrap: wrap;
+
+} */
+
+/* .column:nth-child(1){
+    background-color: rgb(136, 107, 163);
+}
+
+.column:nth-child(2) {
+    background-color: rgb(93, 115, 236);
+}
+
+.column:nth-child(3) {
+    background-color: rgb(143, 199, 40);
+}
+
+.column:nth-child(4) {
+    background-color: rgb(236, 233, 54);
+} */
+
+
+/* .column {
+    flex: 1;
+    min-width: 300px;
+}
+
+img {
+    width: 100%;
+} */
+
+/* ------------------- Flex box End --------------------------- */
+
+
+/* --------------------Using Grid ----------------------------- */
+
+.container > img {
+    max-width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    grid-gap:5px;
+    padding: 7px;
+    align-items: center;
+
+}
+
+/* --------------------End Grid ----------------------------- */
